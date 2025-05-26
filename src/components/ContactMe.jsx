@@ -22,7 +22,6 @@ function ContactMe() {
 
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
 
-          {/* Name */}
           <div>
             <input
               {...register('name', { required: 'Name is required' })}
@@ -33,7 +32,6 @@ function ContactMe() {
             {errors.name && <p className="text-red-400 text-sm mt-1">{errors.name.message}</p>}
           </div>
 
-          {/* Email */}
           <div>
             <input
               {...register('email', {
@@ -50,7 +48,6 @@ function ContactMe() {
             {errors.email && <p className="text-red-400 text-sm mt-1">{errors.email.message}</p>}
           </div>
 
-          {/* Mobile */}
           <div>
             <input
               {...register('mobile', {
@@ -67,7 +64,6 @@ function ContactMe() {
             {errors.mobile && <p className="text-red-400 text-sm mt-1">{errors.mobile.message}</p>}
           </div>
 
-          {/* Comment */}
           <div>
             <textarea
               {...register('comment', { required: 'Please enter your message' })}
@@ -78,7 +74,6 @@ function ContactMe() {
             {errors.comment && <p className="text-red-400 text-sm mt-1">{errors.comment.message}</p>}
           </div>
 
-          {/* Submit Button */}
           <div className="text-center">
             <button
               type="submit"

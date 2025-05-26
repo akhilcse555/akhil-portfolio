@@ -1,12 +1,12 @@
 import React from 'react';
-import profileImg from '../assests/Profile.jpg'; // Replace with your image path
+import profileImg from '../assests/Profile.jpg'; 
 
 const Home = () => {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-pink-100 via-rose-50 to-blue-100 px-6 py-16">
       <div className="max-w-6xl w-full flex flex-col md:flex-row items-center gap-10 md:gap-20">
         
-        {/* Profile Image */}
+     
         <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden shadow-xl border-4 border-pink-400 animate-fade-in">
           <img
             src={profileImg}
@@ -15,7 +15,6 @@ const Home = () => {
           />
         </div>
 
-        {/* Intro Text */}
         <div className="text-center md:text-left space-y-4">
           <h1 className="text-4xl font-bold text-gray-800">Hi, I’m <span className="text-pink-600">Akhil Shahni</span></h1>
           <h2 className="text-2xl font-semibold text-gray-600">Frontend Developer | React.js Enthusiast</h2>

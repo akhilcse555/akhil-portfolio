@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import jslogo from '../assests/jslogo.png'; // ✅ check the path
+import jslogo from '../assests/jslogo.png'; 
 import { Menu, X } from 'lucide-react';
 
 function Header() {
@@ -10,18 +10,18 @@ function Header() {
     setIsMenuOpen(false);
   };
 
-  const menuItems = ['home', 'skills', 'experience', 'projects', 'contactme'];
+  const menuItems = ['home', 'skills', 'experience', 'projects', 'resumeviewer', 'contactme'];
 
   return (
     <>
-      {/* Header Bar */}
+  
       <header className="sticky top-0 z-50 backdrop-blur-lg 
 bg-gradient-to-r from-[#ff4e4e] via-[#fc913ad9] to-[#23d2f9]
 
 text-white shadow-lg border-white/10
 ">
         <div className="flex items-center justify-between px-6 py-4 md:px-12">
-          {/* Logo */}
+          
           <div className="flex items-center gap-2 text-xl font-bold tracking-wide">
             <img src={jslogo} alt="Logo" className="h-10 w-10 object-contain drop-shadow-lg" />
             <span className="bg-white bg-opacity-20 px-2 py-1 rounded-md shadow-sm">
@@ -29,7 +29,7 @@ text-white shadow-lg border-white/10
             </span>
           </div>
 
-          {/* Desktop Nav */}
+        
           <nav className="hidden md:flex space-x-8 text-md font-medium">
             {menuItems.map((item) => (
               <button
@@ -43,7 +43,7 @@ text-white shadow-lg border-white/10
             ))}
           </nav>
 
-          {/* Hamburger Toggle */}
+  
           <button
             className="md:hidden transition transform hover:scale-110"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -53,7 +53,7 @@ text-white shadow-lg border-white/10
         </div>
       </header>
 
-      {/* Mobile Slide-in Menu */}
+ 
       <div
         className={`fixed top-0 right-0 z-40 h-full w-64
           bg-gradient-to-r from-[#ff4e4e80] via-[#fc913a76] to-[#23d2f979]
@@ -81,7 +81,7 @@ text-white shadow-lg border-white/10
         </div>
       </div>
 
-      {/* Overlay when menu is open */}
+    
       {isMenuOpen && (
         <div
           className="fixed inset-0 bg-black bg-opacity-30 z-30 md:hidden"

@@ -29,7 +29,7 @@ const Skills = () => {
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 justify-items-center">
           {skills.map(({ name, level, gradient }, idx) => (
             <div key={idx} className="relative group">
-              {/* Circle with glass + gradient border */}
+            
               <div
                 className={`w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 rounded-full bg-white/5 border-2 border-white/10 backdrop-blur-md shadow-[0_4px_12px_rgba(255,255,255,0.08)] hover:shadow-[0_6px_16px_rgba(255,255,255,0.15)] transition-all duration-300 flex flex-col items-center justify-center`}
               >
